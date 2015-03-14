@@ -1,8 +1,17 @@
 @import 'nib'
 @import 'normalize.styl'
 
+verde = #88BC40
 body
-	background #88BC40
+	background verde
+#siguiente
+	left -35px
+	&:hover
+		left -25px
+#anterior
+	right -35px
+	&:hover
+		right -25px
 section
 	margin 70px auto
 	width 650px
@@ -14,20 +23,31 @@ section
 		line-height 60px
 		width 72px
 		text-decoration none
-		#marco
-			display inline-block
-			vertical-align middle
+		border-radius 50%
+		padding-bottom 12px
+		display inline-block
+		vertical-align middle
+		position relative
+		z-index 2
+		&:hover
+			color black
+			background-color  #CDCDCD
 #marco
 	border 10px solid white
 	border-radius 4px
 	box-shadow 0 0 25px 5px rgba( 0 , 0 , 0 , .3)
 	overflow hidden
 	width 464px
+	display inline-block
+	position relative
+	vertical-align middle
+	z-index 5
 	ul
 		margin 0
 		padding 0
 		width 1200px
 	li
+		background-color verde
 		border 1px solid red
 		height 167px
 		line-height 167px
